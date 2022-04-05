@@ -1,0 +1,11 @@
+Modificar o programa adivinho.py, de forma que ele:
+
+    1 - Que ele pergunte quantos cartões quer utilizar;
+    2 - Que ele gere os números dos cartões;
+    3 - Que execute o teste com os n cartões gerados;
+        - Para a execução do teste, ele deve saber o número maximo a ser gerado...
+        - Ex: 4 Cartões: 1..15
+              5 Cartões: 1..31
+              6 Cartões: 1..63
+              7 Cartões: 1..127
+    4 - Desejável que tenha interface gráfica;
