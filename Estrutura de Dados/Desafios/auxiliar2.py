@@ -1,4 +1,4 @@
-def binvet(n_max): #Cria uma lista de Binários
+def binvet(n_max):  # Cria uma lista de Binários
     a = []
     for i in range(0, n_max):
         a.append("{0:b}".format(i + 1))
@@ -23,16 +23,27 @@ def cardsgen(num, b):  # função geradora de cartões
 
     return cards
 
-n_cartoes=int(input("Insira o número de cartões\n")) #receber número de cartões
-n_max=2**n_cartoes -1 # Verifica o número maximo possivel
-vetorBinarios=binvet(n_max) #retorna lista de número em binário
-cartoes=cardsgen(n_cartoes, vetorBinarios) #Retorna os Cartões
 
-print("Agora pense em um número de 1 a\n",n_max )
-a=0
+n_cartoes = int(input("Insira o número de cartões "))  # receber número de cartões
+n_max = 2 ** n_cartoes - 1  # Verifica o número maximo possivel
+vetorBinarios = binvet(n_max)  # retorna lista de número em binário
+cartoes = cardsgen(n_cartoes, vetorBinarios)  # Retorna os Cartões
+
+print("Agora pense em um número de 1 a ", n_max)
+ja_pensou = input('E ai, já pensou? (S/N) ')
+
+if ja_pensou.upper() != "S":
+    print('Pois ande logo!')
+else:
+    print('Não vai esquecer o número...')
+a = 0
 for i in range(len(cartoes)):
-    b=str(cartoes[i])
-    R=input("Seu número está aqui/n? s\n"+b)
-    if R=='s':
-     a=a+2**i
-print("Seu número é",a)
+    b = str(cartoes[i])
+    R = input("O numero está aqui? (S/N) -> " + b)
+    if R == 's':
+        a = a + 2 ** i
+print("Seu número é", a)
+
+correto = input(f'Acertei? (S/N)')
+if correto.upper() == "S":
+    print('Eu sou demais!!! ;-)')
