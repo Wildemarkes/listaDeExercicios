@@ -3,7 +3,7 @@
 print("Informe a quantidade de peixe pescado")
 peixe_pescado = float(input())
 permitido = 50
-if(peixe_pescado>permitido):
+if peixe_pescado>permitido:
     excesso = peixe_pescado-permitido
     multa = excesso*4
     print("Você pescou",peixe_pescado,"kg de peixes")

@@ -8,6 +8,7 @@ card2 = [2, 3, 6, 7, 10, 11, 14, 15]
 card3 = [4, 5, 6, 7, 12, 13, 14, 15]
 card4 = [8, 9, 10, 11, 12, 13, 14, 15]
 
+
 def print_ask(name):
     # Use a breakpoint in the code line below to debug your script.
     print(f'Olá, {name}')  # Press Ctrl+8 to toggle the breakpoint.

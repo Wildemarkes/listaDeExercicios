@@ -9,3 +9,5 @@ Modificar o programa adivinho.py, de forma que ele:
               6 Cartões: 1..63
               7 Cartões: 1..127
     4 - Desejável que tenha interface gráfica;
+
+
